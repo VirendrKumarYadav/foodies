@@ -1,35 +1,6 @@
 "use client";
 import React, { useEffect } from 'react';
 
-// Define the slide data
-const slides = [
-  {
-    id: 1,
-    src: "https://www.foodlink.in/images/jordan-arnold-Ul07QK2AR-0-unsplash.jpg",
-    alt: "Slide 1"
-  },
-  {
-    id: 2,
-    src: "https://images.unsplash.com/photo-1526371233670-42d618efcec5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Slide 2"
-  },
-  {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Slide 3"
-  },
-  {
-    id: 4,
-    src: "https://images.unsplash.com/photo-1568581789190-ae90a7da930b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Slide 4"
-  },
-  {
-    id: 5,
-    src: "https://images.unsplash.com/photo-1526371233670-42d618efcec5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Slide 5"
-  }
-];
-
 const Hero = () => {
   useEffect(() => {
     import('flowbite').then(({ initFlowbite }) => {
@@ -40,31 +11,78 @@ const Hero = () => {
   return (
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        {slides.map((slide, index) => (
-          <div
-            key={slide.id}
-            className={`hidden duration-700 ease-in-out ${index === 0 ? 'block' : ''}`}
-            data-carousel-item
-          >
-            <img
-              src={slide.src}
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt={slide.alt}
-            />
-          </div>
-        ))}
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://www.foodlink.in/images/jordan-arnold-Ul07QK2AR-0-unsplash.jpg"
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://images.unsplash.com/photo-1526371233670-42d618efcec5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://images.unsplash.com/photo-1583623025817-d180a2221d0a?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://images.unsplash.com/photo-1568581789190-ae90a7da930b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <img
+            src="https://images.unsplash.com/photo-1526371233670-42d618efcec5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
       </div>
       <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        {slides.map((slide, index) => (
-          <button
-            key={slide.id}
-            type="button"
-            className="w-3 h-3 rounded-full"
-            aria-current={index === 0 ? "true" : "false"}
-            aria-label={`Slide ${slide.id}`}
-            data-carousel-slide-to={index}
-          ></button>
-        ))}
+        <button
+          type="button"
+          className="w-3 h-3 rounded-full"
+          aria-current="true"
+          aria-label="Slide 1"
+          data-carousel-slide-to="0"
+        ></button>
+        <button
+          type="button"
+          className="w-3 h-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 2"
+          data-carousel-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          className="w-3 h-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 3"
+          data-carousel-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          className="w-3 h-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 4"
+          data-carousel-slide-to="3"
+        ></button>
+        <button
+          type="button"
+          className="w-3 h-3 rounded-full"
+          aria-current="false"
+          aria-label="Slide 5"
+          data-carousel-slide-to="4"
+        ></button>
       </div>
       <button
         type="button"
