@@ -1,6 +1,8 @@
 import React from 'react';
 
 const AboutFoodlink = () => {
+
+    
     return (
         <section className="text-gray-700 body-font">
             <div className="container mx-auto px-5 py-24">
