@@ -1,30 +1,39 @@
+"use client"
 import React from 'react';
+import Profile from '../about/Profile'
 
 const AboutFoodlink = () => {
-
-    
     return (
-        <section className="text-gray-700 body-font">
+        <section className="text-gray-700 body-font bg-gray-50">
             <div className="container mx-auto px-5 py-24">
                 <div className="text-center mb-20">
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font text-gray-900 mb-4">Revolutionizing the Gastronomical Experience</h1>
-                    <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Foodlink F&B Holdings India Pvt. Ltd. was founded in 2003 by Sanjay Vazirani with the objective of driving excellence in the Indian Food & Beverage Service Industry. It started with small-scale events in Mumbai and kept raising the bar each time with sheer persistence and passion to gradually transform itself into a luxury catering brand to reckon with offering exclusively crafted culinary experiences from all around the world.</p>
+                    <h1 className="sm:text-4xl text-3xl font-bold title-font text-gray-900 mb-4">
+                        Revolutionizing the Gastronomical Experience
+                    </h1>
+                    <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600">
+                        Foodlink F&B Holdings India Pvt. Ltd., established in 2003 by the visionary leader Sanjay Vazirani, has consistently set new standards in the Indian Food & Beverage Service Industry. What began as a small-scale venture in Mumbai has evolved into a premier luxury catering brand, renowned for crafting exclusive culinary experiences from across the globe.
+                    </p>
                 </div>
                 <div className="text-center mb-20">
-                    <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Over time, Foodlink has grown considerably in terms of verticals, geographies and overall stature to become India’s largest and leading Food & Beverage Service Company, headquartered in Mumbai (India) and operating in 4 distinct verticals:</p>
+                    <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600">
+                        Over the years, Foodlink has significantly expanded its footprint, becoming India's largest and most prestigious Food & Beverage Service Company. Headquartered in Mumbai, Foodlink operates in four distinct verticals, each contributing to its esteemed reputation:
+                    </p>
                 </div>
-                <div className="text-center mb-20">
-                    <ul className="list-disc list-inside xl:w-2/4 lg:w-3/4 mx-auto">
-                        <li className="text-base leading-relaxed mb-4">Luxury Catering</li>
-                        <li className="text-base leading-relaxed mb-4">Luxury Banquets</li>
-                        <li className="text-base leading-relaxed mb-4">Institutional Catering</li>
-                        <li className="text-base leading-relaxed mb-4">Restaurants & Cloud Kitchens</li>
+                <div className="text-center mb-12">
+                    <ul className="list-disc list-inside xl:w-3/4 lg:w-3/4 mx-auto text-gray-600">
+                        <li className="text-lg leading-relaxed mb-4">✨ Luxury Catering</li>
+                        <li className="text-lg leading-relaxed mb-4">🏛️ Luxury Banquets</li>
+                        <li className="text-lg leading-relaxed mb-4">🏢 Institutional Catering</li>
+                        <li className="text-lg leading-relaxed mb-4">🍽️ Restaurants & Cloud Kitchens</li>
                     </ul>
                 </div>
                 <div className="text-center">
-                    <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">By continuously evolving its offerings, Foodlink has created its niche in the sector with unparalleled growth and geographical diversification. It stands apart with its robust systems and processes and sharp focus on quality, bringing it the recognition and precious trust of the most discerning clientele from across the country & beyond.</p>
+                    <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600">
+                        Under the dynamic leadership of Virendra Yadav, Foodlink has not only expanded its offerings but also established a distinct niche in the sector. With a relentless pursuit of excellence and a sharp focus on quality, Foodlink has earned the trust of an elite clientele from across the country and beyond. Virendra Yadav's visionary approach continues to drive the company towards unprecedented growth and success.
+                    </p>
                 </div>
             </div>
+            <Profile/>
         </section>
     );
 };
