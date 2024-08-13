@@ -25,7 +25,7 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:10000/api/v1/user/register', formData);
+      const response = await axios.post('https://foodies-back-htpv.onrender.com/api/v1/user/register', formData);
       const { token } = response.data;
       localStorage.setItem('authToken', token);
       router.push('/login');

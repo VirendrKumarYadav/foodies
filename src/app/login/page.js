@@ -24,7 +24,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:10000/api/v1/user/login', formData); 
+      const response = await axios.post('https://foodies-back-htpv.onrender.com/api/v1/user/login', formData); 
       const { token } = response.data; 
       localStorage.setItem('authToken', token);
       router.push('/'); 
