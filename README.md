@@ -4,7 +4,7 @@
 ---
 
 ## Hosted Link: [Click Here](https://food-link-self.vercel.app/login)
-## Hosted Backend Link: [Click Here](https://foodies-back-htpv.onrender.com)
+## Hosted Backend Link: [Click Here](https://github.com/VirendrKumarYadav/foodies_back)
 ---
 
 ## Table of Contents:-
