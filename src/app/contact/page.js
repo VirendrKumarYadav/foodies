@@ -17,11 +17,16 @@ const Contect = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form data here
-    console.log(formData);
-    // You can make an API call to save the data or perform other actions
+
+    try {
+      const response = await axios.post('https://foodies-back-htpv.onrender.com/api/v1/feedback', formData);
+      const { token } = response.data;
+
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   return (
